@@ -1,4 +1,9 @@
 Foodpantry::Application.routes.draw do
+  get "static_pages/home"
+
+  resources :photos
+
+
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
 
   # The priority is based upon order of creation:

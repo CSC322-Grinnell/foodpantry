@@ -1,0 +1,1 @@
+Foodpantry::Application.config.secret_token = f8abd03463a4088d1cc580dee725a1cb2e834bf48439ddbef9349996d68489bc4af06f17accb8e3738a05193dd4ae111e027619882b36652eaea86a2f1c38edb
