@@ -11,3 +11,16 @@
  *= require_self
  *= require_tree .
  */
+
+ul#foodNav {
+	text-align: center;
+	position: fixed;
+}
+
+ ul#foodNav li {
+ 	display: inline-block;
+ 	list-style-type: none;
+ 	padding-right: 10pt;
+ 	font-size: 3em;
+ 	padding-top: 10pt;
+ }
