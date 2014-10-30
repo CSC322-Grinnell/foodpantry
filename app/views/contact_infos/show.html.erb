@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Hours:</b>
+  <%= @contact_info.hours %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @contact_info.email %>
+</p>
+
+<p>
+  <b>Street location:</b>
+  <%= @contact_info.street_location %>
+</p>
+
+<p>
+  <b>State location:</b>
+  <%= @contact_info.state_location %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @contact_info.phone_number %>
+</p>
+
+<p>
+  <b>Holiday hours:</b>
+  <%= @contact_info.holiday_hours %>
+</p>
+
+
+<%= link_to 'Edit', edit_contact_info_path(@contact_info) %> |
+<%= link_to 'Back', contact_infos_path %>

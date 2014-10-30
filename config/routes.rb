@@ -1,4 +1,10 @@
 Foodpantry::Application.routes.draw do
+  resources :contact_infos
+
+
+  resources :food_items
+
+
   get "static_pages/home"
 
   resources :photos

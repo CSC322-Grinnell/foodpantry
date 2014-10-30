@@ -1,0 +1,41 @@
+<%= form_for(@contact_info) do |f| %>
+  <% if @contact_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact_info.errors.count, "error") %> prohibited this contact_info from being saved:</h2>
+
+      <ul>
+      <% @contact_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hours %><br />
+    <%= f.text_field :hours %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :street_location %><br />
+    <%= f.text_field :street_location %>
+  </div>
+  <div class="field">
+    <%= f.label :state_location %><br />
+    <%= f.text_field :state_location %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br />
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :holiday_hours %><br />
+    <%= f.text_field :holiday_hours %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
