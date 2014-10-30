@@ -10,6 +10,10 @@
 </head>
 <body>
 
+<!-- HEADER -->
+
+<!-- NAV -->
+
 <div class="container">
 
 <ul id="foodNav">
@@ -19,16 +23,15 @@
   <li><a href="#contactInfo">Contact</a></li>
 </ul>
 
-<div id="acceptedFood" style="height:800px; padding-top:50pt;">
-  <h1>Coming soon!</h1>
+<div id="tabBox" style="height:300px; padding-top:50pt;">
+  <%= yield %>
+</div>
 </div>
 
-<div id="locationInfo" style="height:800px; padding-top:50pt;">
-  <h1>Coming soon!</h1>
-</div>
+<!-- CONTACT INFO BOX -->
 
-<div id="contactInfo" style="height:800px; padding-top:50pt;">
-  <h1>CONTACT US!</h1>
+<div id="contactInfo" style="padding-top:30pt; padding-bottom:30pt; text-align:center;">
+  <h2>CONTACT US!</h2>
   <h3>Mid-Iowa Community Action, Inc.</h3>
   Administrative Offices <br/>
   1001 S. 18th Ave. <br/>
@@ -36,10 +39,6 @@
   641-752-7162 <br/>
   <a href="mailto:info@micaonline.org?Subject=Hi Mica!">Email Us!</a>
 </div>
-
-</div>
-
-<%= yield %>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/assets/javascripts/bootstrap.js"></script>
