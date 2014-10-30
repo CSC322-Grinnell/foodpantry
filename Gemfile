@@ -45,7 +45,7 @@ gem 'jquery-rails'
 
 # debugger is useful in development mode too
 group :development, :test do
-  gem 'debugger'
+  # gem 'debugger'
   gem 'jasmine-rails' # if you plan to use JavaScript/CoffeeScript
 end
 # setup Cucumber, RSpec, autotest support
