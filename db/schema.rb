@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141030194235) do
+ActiveRecord::Schema.define(:version => 20141104025541) do
 
   create_table "contact_infos", :force => true do |t|
     t.string   "hours"
