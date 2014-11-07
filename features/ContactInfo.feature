@@ -12,7 +12,7 @@ Background: contact information in database
 
 Scenario: Browsing any part of the website
 
-  Given I am anywhere on the website
+  Given I am on the contact_infos page
   Then I should see "8:30AM-4:30PM"
   And I should see "hello@micaonline.org"
   And I should see "611 4th Avenue"
