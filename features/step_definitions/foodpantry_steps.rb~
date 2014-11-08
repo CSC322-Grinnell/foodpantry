@@ -41,11 +41,11 @@ And /^I do not see "(.*)" before "(.*)"/ do |e1, e2|
   assert(page.body =~ /#{e2}.*#{e1}/m, "#{e2} is not before #{e1}")
 end
 
-=begin
+
 And /^I do not see "(.*)"/ do |e1|
   #  ensure that e1 does not occur before e2.
   #  page.content is the entire content of the page as a string.
-  assert(page.body =~ /#{e1}/m, "#{e2} is not before #{e1}")
+  assert(page.body =~ #{e1}/m, "#{e2} is not before #{e1}")
 end
 =begin
 Then(/^I should see the (\d+) page$/) do ||1, e2|

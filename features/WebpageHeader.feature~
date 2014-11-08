@@ -14,5 +14,3 @@ Scenario: Browsing any part of the website
 
 	Given I am on the food_items page
 	#Then MICA logo exists with id 1
-
-#Scenario: No website header available (sad path)
