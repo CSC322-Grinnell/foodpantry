@@ -35,7 +35,7 @@ end
 
 
 # sad path
-And /^I do not see "(.*)" before "(.*)"/ do |e1, e2|
+And /^I should not see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that e1 does not occur before e2.
   #  page.content is the entire content of the page as a string.
   assert(page.body =~ /#{e2}.*#{e1}/m, "#{e2} is not before #{e1}")

@@ -26,8 +26,7 @@ Scenario: view added items on the page
 
 Scenario: check to see if the items are sorted
 	Given I am on the food_items page
-	Then I do not see "Grapes" before "Diapers"
-	Then I should see "items are not sorted"
+	And I should not see "Diapers" before "Grapes"
 
 
 

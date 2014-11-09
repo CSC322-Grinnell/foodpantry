@@ -23,12 +23,11 @@ Scenario: Browsing any part of the website
 Scenario: Given no contact infomation exists (sad path)
 
   Given I am on the contact_infos page
-  And I do not see "8:30AM-4:30PM"
-  And I do not see "hello@micaonline.org"
-  And I do not see "611 4th Avenue"
-  And I do not see "Grinnell, IA 50112"
-  And I do not see "641-236-3923"
-  And I do not see "closed"
-  Then I should see "no contact information available"
+  Then I should not see "9:00AM-5:00PM"
+  And I should not see "goodbye@micaonline.org"
+  And I should not see "611 5th Avenue"
+  And I should not see "Grinnell, IA 50211"
+  And I should not see "641-236-3932"
+  And I should not see "open"
 
 
