@@ -13,7 +13,7 @@
 <% @food_items.each do |food_item| %>
   <tr>
     <td><%= food_item.name %></td>
-    <td><%= food_item.foodItem_id %></td>
+    <td><%= food_item.id %></td>
     <td><%= food_item.needPriority %></td>
     <td><%= link_to 'Show', food_item %></td>
     <td><%= link_to 'Edit', edit_food_item_path(food_item) %></td>
