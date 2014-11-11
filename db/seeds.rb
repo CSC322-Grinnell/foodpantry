@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+foods = [{:name => "Canned Food"},
+			{:name => "Diapers"},
+			{:name => "Apples"},
+			{:name => "Butter"},
+		]
+foods.each do |fud|
+	FoodItem.create!(fud)
+end
