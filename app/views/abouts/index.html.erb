@@ -1,0 +1,23 @@
+<h1>Listing abouts</h1>
+
+<table>
+  <tr>
+    <th>Statement</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @abouts.each do |about| %>
+  <tr>
+    <td><%= about.statement %></td>
+    <td><%= link_to 'Show', about %></td>
+    <td><%= link_to 'Edit', edit_about_path(about) %></td>
+    <td><%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New About', new_about_path %>

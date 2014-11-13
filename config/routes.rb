@@ -1,4 +1,7 @@
 Foodpantry::Application.routes.draw do
+  resources :abouts
+
+
   resources :contact_infos
 
 

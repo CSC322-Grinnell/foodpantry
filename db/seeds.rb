@@ -61,3 +61,14 @@ contacts = [{:hours => "Whenever, where ever", :email => "mica@shakira.org", :st
 contacts.each do |con|
 	ContactInfo.create!(con)
 end
+
+abouts = [{:statement => "In all our endeavors, we are guided by five values: family, helping others, partnership, achieving results and innovation. These values direct the way we provide services and the way that we structure our organization.  They constitute the core of MICA's philosophy and, together with our strategic plan, serve as guideposts for our staff.  Our core values echo the mission of community action around the country but also highlight MICA's focus on providing excellent services to families."},
+]
+
+abouts.each do |ab|
+	About.create!(ab)
+end
+
+
+
+
