@@ -21,6 +21,15 @@ Given /^the following contact information exists:$/ do |contacts|
   end
 end
 
+Given /^the following about information exists:$/ do |abouts|
+  abouts.hashes.each do |ab|
+    About.create!(ab)
+    
+    # each returned element will be a hash whose key is the table header.
+    # you should arrange to add that movie to the database here.
+  end
+end
+
 And /I should see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that e1 occurs before e2.
   #  page.content  is the entire content of the page as a string.
