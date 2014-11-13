@@ -9,7 +9,7 @@ Background: food_items in database
 
 Given the following food_items exist:
 
-	| name		| id 	| needPriority 	|
+	| name		| id 			| needPriority 	|
 	| Bananas	| 1				| 0				|
 	| Apples	| 2				| 2				|
 	| Grapes	| 3 			| 1 			|
