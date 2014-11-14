@@ -7,16 +7,16 @@ Background: food_items in database
 
 Given the following food_items exist:
 
-	| name		| id 			| needPriority 	|
-	| Bananas	| 1				| 0				|
-	| Apples	| 2				| 2				|
-	| Grapes	| 3 			| 0 			|
+	| name			| needPriority 	|
+	| Oatmeal		| 1				|
+	| Peanut Butter	| 2				|
+	| Canned Fruits	| 1 			|
 
 Scenario: view added items on the page
 	Given I am on the food_items page
-	Then I should see "Bananas"
-	And I should see "Apples"
-	And I should see "Grapes"
+	And I should see "Oatmeal"
+	And I should see "Peanut Butter"
+	And I should see "Canned Fruits"
 	And I should not see "Puppies"
 
 

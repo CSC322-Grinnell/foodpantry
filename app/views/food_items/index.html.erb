@@ -14,13 +14,13 @@
 
 <% @food_items.each do |food_item| %>
   <tr>
-    <% if food_item.needPriority > 0 %>
+    <!--<% if food_item.needPriority > 0 %>-->
     <td><%= food_item.name %></td>
     <td><%= food_item.needPriority %></td>
     <td><%= link_to 'Show', food_item %></td>
     <td><%= link_to 'Edit', edit_food_item_path(food_item) %></td>
     <td><%= link_to 'Destroy', food_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    <% end %>
+    <!--<% end %> -->
   </tr>
 <% end %>
 </table>

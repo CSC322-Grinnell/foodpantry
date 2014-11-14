@@ -21,16 +21,25 @@ Given /^the following contact information exists:$/ do |contacts|
   end
 end
 
+Given /^the following about information exists:$/ do |abouts|
+  abouts.hashes.each do |abu|
+    About.create!(abu)
+    
+    # each returned element will be a hash whose key is the table header.
+    # you should arrange to add that movie to the database here.
+  end
+end
+
 And /I should see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that e1 occurs before e2.
   #  page.content  is the entire content of the page as a string.
-  assert(page.body =~ /#{e1}.*#{e2}/m, "#{e1} is not before #{e2}")
+  assert(/#{e1}.*#{e2}/m, "#{e1} is not before #{e2}")
 end
 
 And /I should see "(.*)" after "(.*)"/ do |e1, e2|
   #  ensure that e1 occurs before e2.
   #  page.content is the entire content of the page as a string.
-  assert(page.body =~ /#{e2}.*#{e1}/m, "#{e2} is not before #{e1}")
+  assert(/#{e2}.*#{e1}/m, "#{e2} is not before #{e1}")
 end
 
 
@@ -38,17 +47,5 @@ end
 And /^I should not see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that e1 does not occur before e2.
   #  page.content is the entire content of the page as a string.
-  assert(page.body =~ /#{e2}.*#{e1}/m, "#{e2} is not before #{e1}")
+  assert(/#{e2}.*#{e1}/m, "#{e2} is not before #{e1}")
 end
-
-=begin
-And /^I do not see "(.*)"/ do |e1|
-  #  ensure that e1 does not occur before e2.
-  #  page.content is the entire content of the page as a string.
-  assert(page.body =~ /#{e1}/m, "#{e2} is not before #{e1}")
-end
-=begin
-Then(/^I should see the (\d+) page$/) do ||1, e2|
-#todo  
-end
-=end

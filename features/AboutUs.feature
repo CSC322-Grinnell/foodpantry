@@ -18,4 +18,4 @@ Scenario: view statement on about page
 
 Scenario: Given no statement exists
 	Given I am on the abouts page
-	Then I should not see "Blank"
+	Then I should not see "Silly"
