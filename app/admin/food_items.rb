@@ -1,0 +1,3 @@
+ActiveAdmin.register FoodItem do
+  
+end

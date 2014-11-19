@@ -1,4 +1,6 @@
 Foodpantry::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   resources :abouts
 
 
@@ -64,7 +66,9 @@ Foodpantry::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'StaticPages#home'
+  root :to => 'StaticPages#home'
+
+  ActiveAdmin.routes(self)
 
   # See how all your routes lay out with "rake routes"
 
