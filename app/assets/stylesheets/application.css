@@ -29,7 +29,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 200px;
-  background-color: #f5f5f5;
+  background-color: #ACAF2D;
 }
 
 
@@ -53,6 +53,27 @@ body > .container {
 
 .contactInfo {
 	text-align: center;
+}
+
+body > .navbar {
+  background-color: white;
+  border-color: #ACAF2D;
+}
+
+body > .navbar .navbar-brand {
+  color: #ACAF2D;
+}
+
+body > .navbar .navbar-brand:hover {
+  color: #333;
+}
+
+body > .navbar .navbar-nav > li > a, a:hover {
+  color: #ACAF2D;
+}
+
+body > .navbar .navbar-nav > li > a:hover {
+  color: #333;
 }
 
 h1 {
