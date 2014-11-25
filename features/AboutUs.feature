@@ -16,6 +16,6 @@ Scenario: view statement on about page
 	Given I am on the abouts page
 	Then I should see "Blank"
 
-Scenario: Given no statement exists
+Scenario: no statement exists (sad path)
 	Given I am on the abouts page
 	Then I should not see "Silly"
