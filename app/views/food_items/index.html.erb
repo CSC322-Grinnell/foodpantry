@@ -8,9 +8,8 @@
     <th>Name</th>
   </tr>
 
-<% @food_items.each do |food_item| %>
+<% @needed_food_items.each do |food_item| %>
   <tr>
-    <% if food_item.needPriority > 0 %>
     <td><%= food_item.name %></td>
     <% end %>
   </tr>

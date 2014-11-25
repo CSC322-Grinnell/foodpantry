@@ -3,8 +3,7 @@ class FoodItemsController < ApplicationController
   # GET /food_items.json
   def index
     @food_items = FoodItem.all
-    #@food_items = FoodItem.find(:all, :order => "needPriority DESC")
-    @food_items.sort! { |a,b| b.needPriority <=> a.needPriority}
+    @needed_food_items = FoodItem.where('needPriority > 0').order('needPriority DESC')
 
     respond_to do |format|
       format.html # index.html.erb
