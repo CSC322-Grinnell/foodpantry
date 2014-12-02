@@ -1,0 +1,18 @@
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+<h1>Food Items in Need</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Name</th>
+  </tr>
+<% @needed_food_items.each do |food_item| %>
+  <tr>
+    <td><%= food_item.name %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</div>
+<th>Last Updated <%= time_ago_in_words(@last_updated_at) %> ago </th>
+
