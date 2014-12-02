@@ -30,6 +30,7 @@ gem 'jquery-rails'
 gem "jquery-ui-rails"
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails', '~> 3.1.2'
+gem 'fancybox-rails'
 
 gem 'activeadmin'
 gem 'meta_search'
