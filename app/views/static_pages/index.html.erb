@@ -1,6 +1,13 @@
 <div class="row">
-<div class="col-md-8 col-md-offset-2">
-<h1>Food Items in Need</h1>
+<div class="col-md-2">
+
+</div>
+<div class="col-md-8">
+<h1>Food Items in Need *</h1>
+<center>Last Updated <%= time_ago_in_words(@last_updated_at) %> ago
+</br>
+<span style="font-size:10px;">* if you plan on donating over 200lbs, please let us know in advance, so we can prepare accordingly</span>
+</center>
 
 <table class="table table-striped">
   <tr>
@@ -8,11 +15,11 @@
   </tr>
 <% @needed_food_items.each do |food_item| %>
   <tr>
-    <td><%= food_item.name %></td>
+    <td style="font-size:20px;"><%= food_item.name %></td>
   </tr>
 <% end %>
 </table>
 </div>
 </div>
-<th>Last Updated <%= time_ago_in_words(@last_updated_at) %> ago </th>
+
 
