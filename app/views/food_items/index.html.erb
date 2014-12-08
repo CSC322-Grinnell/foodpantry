@@ -1,36 +1,37 @@
 <!-- Example row of columns -->
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-1">
 
   </div>
-  <div class="col-md-6">
-    <h1>Food Items in Need</h1>
+  <div class="col-md-5">
 
-<table class="table table-striped">
+<table class="table">
   <tr>
-    <th>Name</th>
+    <th style="background-color:#8DAF2D;"><h1>Food Items in Need</h1></th>
   </tr>
 
 <% @needed_food_items.each do |food_item| %>
   <tr>
-    <td style="font-size:20px;"><%= food_item.name %></td>
+    <td style="font-size:20px; background-color:#BFD08F;"><%= food_item.name %></td>
   </tr>
 <% end %>
 </table>
+</div>
 
-<h1>Accepted Food Items</h1>
+<div class="col-md-5">
 
-<table class="table table-striped">
+<table class="table">
   <tr>
-    <th>Name</th>
+    <th style="background-color:#F2C83E;"><h1>Accepted Food Items</h1></th>
   </tr>
 
 <% @food_items.each do |food_item| %>
   <tr>
-    <td style="font-size:20px;"><%= food_item.name %></td>
+    <td style="font-size:20px; background-color:#F1DC97;"><%= food_item.name %></td>
   </tr>
 <% end %>
 </table>
+</div>
 
 <br />
   </div>
