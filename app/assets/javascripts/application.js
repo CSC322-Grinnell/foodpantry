@@ -11,9 +11,11 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require fancybox
 //= require jquery_ujs
 //= require bootstrap.min
-//= require fancybox
 //= require_tree .
 
-
+jQuery(function() {
+  $("a.fancybox").fancybox();
+});
