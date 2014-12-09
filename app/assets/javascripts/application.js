@@ -16,6 +16,6 @@
 //= require bootstrap.min
 //= require_tree .
 
-jQuery(function() {
+$(document).ready(function() {
   $("a.fancybox").fancybox();
 });
