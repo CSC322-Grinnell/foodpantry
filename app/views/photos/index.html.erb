@@ -1,29 +1,13 @@
-<h1>Listing photos</h1>
 
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Description</th>
-    <th>Date added</th>
-    <th>Title</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @photos.each do |photo| %>
-  <tr>
-    <td><%= photo.id %></td>
-    <td><%= photo.description %></td>
-    <td><%= photo.date_added %></td>
-    <td><%= photo.title %></td>
-    <td><%= link_to 'Show', photo %></td>
-    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-    <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Photo', new_photo_path %>
+<%= link_to (image_tag "1.jpg", :size => "260x180"), image_path("1.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "2.jpg", :size => "260x180"), image_path("2.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "3.jpg", :size => "260x180"), image_path("3.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "4.jpg", :size => "260x180"), image_path("4.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "5.jpg", :size => "260x180"), image_path("5.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "6.jpg", :size => "180x180"), image_path("6.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "7.jpg", :size => "260x180"), image_path("7.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "8.jpg", :size => "260x180"), image_path("8.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "9.jpg", :size => "260x180"), image_path("9.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "10.jpg", :size => "260x180"), image_path("10.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "11.jpg", :size => "260x180"), image_path("11.jpg"), :class => "fancybox" %>
+<%= link_to (image_tag "12.jpg", :size => "260x180"), image_path("12.jpg"), :class => "fancybox" %>
