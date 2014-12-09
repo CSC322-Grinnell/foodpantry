@@ -55,7 +55,7 @@ foods.each do |fud|
 	FoodItem.create!(fud)
 end
 
-contacts = [{:hours => "Whenever, where ever", :email => "mica@shakira.org", :street_location => "1001 S. 18th Ave.", :state_location => "BellyRoll, IA 50112", :phone_number => "911", :holiday_hours => "NEVER EVER"},
+contacts = [{:hours => "8AM-5PM", :email => "info@micaonline.org", :street_location => "611 4th St", :state_location => "Grinnell, IA 50112", :phone_number => "641-236-3923", :holiday_hours => "Closed on holidays"},
 ]
 
 contacts.each do |con|

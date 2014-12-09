@@ -30,7 +30,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 200px;
-  background-color: #ACAF2D;
+  background-color: #8DAF2D;
 }
 
 
@@ -58,11 +58,11 @@ body > .container {
 
 body > .navbar {
   background-color: white;
-  border-color: #ACAF2D;
+  border-color: #8DAF2D;
 }
 
 body > .navbar .navbar-brand {
-  color: #ACAF2D;
+  color: #8DAF2D;
 }
 
 body > .navbar .navbar-brand:hover {
@@ -70,7 +70,7 @@ body > .navbar .navbar-brand:hover {
 }
 
 body > .navbar .navbar-nav > li > a, a:hover {
-  color: #ACAF2D;
+  color: #8DAF2D;
 }
 
 body > .navbar .navbar-nav > li > a:hover {
