@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
   def index
     @food_items = FoodItem.all
-    @needed_food_items = FoodItem.where('needPriority > 0').order('needPriority DESC')
+    @needed_food_items = FoodItem.where('needpriority > 0').order('needpriority DESC')
     @last_updated_at = FoodItem.maximum('updated_at')
 
     respond_to do |format|

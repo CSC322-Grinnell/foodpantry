@@ -3,7 +3,7 @@ class FoodItemsController < ApplicationController
   # GET /food_items.json
   def index
     @food_items = FoodItem.all
-    @needed_food_items = FoodItem.where('needPriority > 0').order('needPriority DESC')
+    @needed_food_items = FoodItem.where('needpriority > 0').order('needpriority DESC')
 
     respond_to do |format|
       format.html # index.html.erb

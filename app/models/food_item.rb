@@ -1,8 +1,8 @@
 class FoodItem < ActiveRecord::Base
-  attr_accessible :name, :needPriority
+  attr_accessible :name, :needpriority
 
   def init
-  	self.needPriority ||= 0
+  	self.needpriority ||= 0
   end
   
 end
