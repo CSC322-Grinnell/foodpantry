@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141120211453) do
+ActiveRecord::Schema.define(:version => 20141211200504) do
 
   create_table "abouts", :force => true do |t|
     t.text     "statement",  :limit => 255
@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(:version => 20141120211453) do
   create_table "food_items", :force => true do |t|
     t.string   "name"
     t.integer  "foodItem_id"
-    t.integer  "needPriority"
+    t.integer  "needpriority"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
