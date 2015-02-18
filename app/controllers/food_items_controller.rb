@@ -2,7 +2,7 @@ class FoodItemsController < ApplicationController
   # GET /food_items
   # GET /food_items.json
   def index
-    @food_items = FoodItem.all
+    @food_items = FoodItem.order('name ASC')
     @needed_food_items = FoodItem.where('needpriority > 0').order('needpriority DESC')
 
     respond_to do |format|
