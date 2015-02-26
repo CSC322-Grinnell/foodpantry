@@ -30,4 +30,10 @@ Scenario: Given no contact infomation exists (sad path)
   And I should not see "641-236-3932"
   And I should not see "open"
 
+Scenario: Looking at the footer
+  
+  Given I am on the home page
+  And I should see "611 5th Avenue"
+  And I should see "Grinnell, IA, 50211"
+  And I should see "641-236-3932"
 
