@@ -7,6 +7,7 @@ gem 'rails', '3.2.18'
 
 group :development, :test do
   gem 'sqlite3' #develop locally with the sqlite database
+  gem 'rubocop'
 end
 
 group :production do
