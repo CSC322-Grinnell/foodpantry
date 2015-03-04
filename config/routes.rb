@@ -1,5 +1,7 @@
 Foodpantry::Application.routes.draw do
 
+  get "donates/index"
+
   get "photos/index"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -18,6 +20,7 @@ Foodpantry::Application.routes.draw do
 
   resources :photos
 
+  resources :donates
 
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
 
