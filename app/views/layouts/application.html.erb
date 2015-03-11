@@ -70,9 +70,12 @@
       <div class="col-md-6">
           <h2 style="color:white;">CONTACT US!</h2>
           <p>Poweshiek Food Pantry<br/>
-          611 4th Street<br/>
-          Grinnell, IA 50112 <br/>
-          641-236-3923 <br/> 
+          <% @footer_info = ContactInfo.all %>
+          <% @footer_info.each do |contact_info| %>           
+              <%= contact_info.street_location %><br/>
+              <%= contact_info.state_location %><br/>
+              <%= contact_info.phone_number %><br/>
+          <% end %>        
           <a href="mailto:info@micaonline.org?Subject=Hi Mica!">Email Us!</a>
           </p> 
     
