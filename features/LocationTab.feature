@@ -7,4 +7,4 @@ Background:
 
 Scenario: Google map is there
 	Given I am on the location page
-	And I should see a Google Map
+	Then I should see a Google Map

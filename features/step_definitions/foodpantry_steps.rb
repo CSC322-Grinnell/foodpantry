@@ -1,6 +1,9 @@
 Given /^the following food_items exist:$/ do |food_items|
   food_items.hashes.each do |food|
-    FoodItem.create!(food)
+    item = FoodItem.new
+    item.name = food[:name]
+    item.needpriority = food[:needpriority]
+    item.save
     puts food
   end
 end
@@ -48,4 +51,8 @@ And /^I should not see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that e1 does not occur before e2.
   #  page.content is the entire content of the page as a string.
   assert(/#{e2}.*#{e1}/m, "#{e2} is not before #{e1}")
+end
+
+Then /^I should see a Google Map/ do
+  page.should have_css('div.google-maps')
 end
