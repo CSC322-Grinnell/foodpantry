@@ -8,3 +8,8 @@ Background:
 Scenario: Google map is there
 	Given I am on the location page
 	Then I should see a Google Map
+
+Scenario: Pictures are there
+	Given I am on the location page
+	Then I should see the front door photo
+	And I should see the side door photo

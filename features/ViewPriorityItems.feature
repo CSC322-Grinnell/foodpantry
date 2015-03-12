@@ -29,4 +29,8 @@ Scenario: check to see if the items are sorted
 	And I should not see "Diapers" before "Grapes"
 
 
+Scenario: check to see if non-consumable column exists
+	Given I am on the food_items page
+	Then I should see the Accepted Non-Food Items column
+	And I should see items in the Accepted Non-Food items column
 
