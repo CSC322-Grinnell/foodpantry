@@ -33,7 +33,7 @@ Scenario: Given no contact infomation exists (sad path)
 Scenario: Looking at the footer
   
   Given I am on the food_items page
-  And I should see "611 4th St"
+  Then I should see "611 4th Avenue"
   And I should see "Grinnell, IA 50112"
   And I should see "641-236-3923"
 

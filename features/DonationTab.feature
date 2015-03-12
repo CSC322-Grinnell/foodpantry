@@ -6,6 +6,5 @@ Feature: Donation Tab
 Background:
 
 Scenario: check to see if donation link goes anywhere
-	Given I am on the home page
-	And I click the Donate tab
-	Then I should be on the donates page
+	Given I am on the donates page
+	Then I should see the link "Donate to MICA"

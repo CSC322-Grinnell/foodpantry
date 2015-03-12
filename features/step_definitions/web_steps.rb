@@ -276,3 +276,7 @@ def element_visible?(element_id)
 end
 
 # from: https://gist.github.com/testobsessed/848439
+
+Then /^I should see the link "([^\"]*)"$/ do |linked_text|
+  page.should have_css("a", :text => linked_text)
+end
