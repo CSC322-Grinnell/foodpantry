@@ -20,6 +20,8 @@ Foodpantry::Application.routes.draw do
 
   resources :photos
 
+  resources :location
+
   resources :donates
 
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
