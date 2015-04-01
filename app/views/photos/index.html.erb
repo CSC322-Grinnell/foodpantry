@@ -1,3 +1,6 @@
+<% for i in 1..12 %>
+<a href=<%= "assets/" + i.to_s + ".jpg" %>>Image</a>
+<% end %>
 <%= link_to (image_tag "1.jpg", :size => "260x180"), image_path("1.jpg"), :class => "fancybox" %>
 <%= link_to (image_tag "2.jpg", :size => "260x180"), image_path("2.jpg"), :class => "fancybox" %>
 <%= link_to (image_tag "3.jpg", :size => "260x180"), image_path("3.jpg"), :class => "fancybox" %>
