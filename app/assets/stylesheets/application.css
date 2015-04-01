@@ -12,6 +12,7 @@
  *= require bootstrap.min
  *= require fancybox
  *= require_tree .
+ *= require lightbox
  */
 
 /* Sticky footer styles

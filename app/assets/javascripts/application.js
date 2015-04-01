@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require_tree .
+//= require lightbox.min
 
 $(document).ready(function() {
   $("a.fancybox").fancybox();
