@@ -34,7 +34,7 @@ foods = [{:name => "100% Juice Concentrate/Boxes", :needpriority => 0, :item_typ
 			{:name => "Baby Wipes", :needpriority => 0, :item_type => "Non-Food"},
 			{:name => "Baby Wash", :needpriority => 0, :item_type => "Non-Food"},
 			{:name => "Children's Book", :needpriority => 0, :item_type => "Non-Food"},
-			{:name => "Deodorant", :needpriority => 0}, :item_type => "Non-Food",
+			{:name => "Deodorant", :needpriority => 0, :item_type => "Non-Food"},
 			{:name => "Diapers", :needpriority => 0, :item_type => "Non-Food"},
 			{:name => "Dishwashing Liquid", :needpriority => 0, :item_type => "Non-Food"},
 			{:name => "Floss", :needpriority => 0, :item_type => "Non-Food"},
