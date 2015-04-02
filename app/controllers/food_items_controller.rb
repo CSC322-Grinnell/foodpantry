@@ -70,6 +70,16 @@ class FoodItemsController < ApplicationController
     end
   end
 
+  def reset
+    @food_items = FoodItem.all
+    @food_items.each do |item|
+        item.needpriority = 0
+        item.save
+    end
+    flash[:notice] = "Reset item priorities to 0"
+    redirect_to "/admin/food_items"
+  end
+
   # DELETE /food_items/1
   # DELETE /food_items/1.json
   def destroy
