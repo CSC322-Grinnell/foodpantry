@@ -1,39 +1,51 @@
 <!-- Example row of columns -->
 <div class="row">
-  <div class="col-md-1">
+  
+  <div class="col-sm-4">
 
+    <table class="table">
+      <tr>
+        <th style="background-color:#8DAF2D;"><h2>Items in Need</h2></th>
+      </tr>
+
+      <% @needed_food_items.each do |food_item| %>
+        <tr>
+          <td style="font-size:18px; background-color:#BFD08F;"><%= food_item.name %></td>
+        </tr>
+      <% end %>
+    </table>
   </div>
-  <div class="col-md-5">
 
-<table class="table">
-  <tr>
-    <th style="background-color:#8DAF2D;"><h1>Food Items in Need</h1></th>
-  </tr>
+  <div class="col-sm-4">
 
-<% @needed_food_items.each do |food_item| %>
-  <tr>
-    <td style="font-size:20px; background-color:#BFD08F;"><%= food_item.name %></td>
-  </tr>
-<% end %>
-</table>
-</div>
+    <table class="table">
+      <tr>
+        <th style="background-color:#F2C83E;"><h2>Accepted Food Items</h2></th>
+      </tr>
 
-<div class="col-md-5">
+      <% @food_items.each do |food_item| %>
+        <tr>
+          <td style="font-size:18px; background-color:#F1DC97;"><%= food_item.name %></td>
+        </tr>
+      <% end %>
+  </table>
+  </div>
 
-<table class="table">
-  <tr>
-    <th style="background-color:#F2C83E;"><h1>Accepted Food Items</h1></th>
-  </tr>
+  <div class="col-sm-4">
 
-<% @food_items.each do |food_item| %>
-  <tr>
-    <td style="font-size:20px; background-color:#F1DC97;"><%= food_item.name %></td>
-  </tr>
-<% end %>
-</table>
-</div>
+    <table class="table">
+      <tr>
+        <th style="background-color:#F2C83E;"><h2>Accepted Non-Food Items</h2></th>
+      </tr>
 
-<br />
+      <% @non_food_items.each do |food_item| %>
+        <tr>
+          <td style="font-size:18px; background-color:#F1DC97;"><%= food_item.name %></td>
+        </tr>
+      <% end %>
+  </table>
+  </div>
+  <br />
   </div>
 </div>
 
