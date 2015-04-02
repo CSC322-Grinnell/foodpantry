@@ -12,7 +12,12 @@ Foodpantry::Application.routes.draw do
   resources :contact_infos
 
 
-  resources :food_items
+  resources :food_items do
+    collection do
+      get 'reset'
+    end
+  end
+  
 
 
   resources :static_pages, only: 
