@@ -7,10 +7,10 @@ Background: food_items in database
 
 Given the following food_items exist:
 
-	| name			| needPriority 	|
-	| Oatmeal		| 1				|
-	| Peanut Butter	| 2				|
-	| Canned Fruits	| 1 			|
+	| name			| needPriority 	| item_type  |
+	| Oatmeal		| 1				| Food       |
+	| Peanut Butter	| 2				| Food       | 
+	| Canned Fruits	| 1 			| Food       |
 
 Scenario: view added items on the page
 	Given I am on the food_items page

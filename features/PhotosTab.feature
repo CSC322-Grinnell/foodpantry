@@ -8,5 +8,4 @@ Background:
 
 Scenario: Photos are in a gallery
 	Given I am on the photos page
-	Then I should see pictures in a gallery
-
+	Then I should see a gallery

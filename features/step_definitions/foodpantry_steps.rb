@@ -3,6 +3,7 @@ Given /^the following food_items exist:$/ do |food_items|
     item = FoodItem.new
     item.name = food[:name]
     item.needpriority = food[:needpriority]
+    item.item_type = food[:item_type]
     item.save
     puts food
   end
@@ -55,4 +56,18 @@ end
 
 Then /^I should see a Google Map/ do
   page.should have_css('div.google-maps')
+end
+
+#Then /^I should see the Accepted Non-Food Items column/ do
+#  page
+Then /^I should see a gallery/ do
+  page.should have_css("a.gallery")
+end
+
+Then /^I should see the front door photo/ do
+  page.should have_css("a.front")
+end
+
+And /^I should see the side door photo/ do
+  page.should have_css("a.side")
 end
