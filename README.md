@@ -8,8 +8,10 @@ Live production website available at http://guarded-sea-4243.herokuapp.com
 To install and run: 
 
     git clone https://github.com/CSC322-Grinnell/foodpantry
-    bundle install –without production
-    rake db:migrate db:test:prepare (No need for db:seed on a clean install)
+    bundle install –-without production
+    rake db:setup (which might run db:migrate and db:seed in one step, making the next steps redundant)
+    rake db:migrate 
+    rake db:test:prepare (No need for db:seed on a clean install)
     rake cucumber
     rake spec
     rails server
