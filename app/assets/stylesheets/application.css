@@ -17,13 +17,18 @@
 
 /* Sticky footer styles
 -------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 200px;
+  font-family: 'Roboto', sans-serif !important;
+
 }
 .footer {
   position: absolute;
@@ -93,4 +98,3 @@ table th {
 table tr {
   text-align:center;
 }
-
