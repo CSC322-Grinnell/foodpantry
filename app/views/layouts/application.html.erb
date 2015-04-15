@@ -70,7 +70,6 @@
       <div class="col-md-6">
           <h2 style="color:white;">CONTACT US!</h2>
           <p>Poweshiek Food Pantry<br/>
-          <% @footer_info = ContactInfo.all %>
           <% @footer_info.each do |contact_info| %>           
               <%= contact_info.street_location %><br/>
               <%= contact_info.state_location %><br/>
