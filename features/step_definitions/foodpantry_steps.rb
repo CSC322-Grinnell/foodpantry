@@ -71,3 +71,18 @@ end
 And /^I should see the side door photo/ do
   page.should have_css("a.side")
 end
+
+###
+# ADMIN TESTING STUFF
+###
+
+Given /^I am a new, authenticated user$/ do
+  email = 'testing@grinnell.edu'
+  password = 'testpassword'
+  AdminUser.new(:email => email, :password => password, :password_confirmation => password).save!
+
+  visit '/admin/login'
+  fill_in "Email", :with => email
+  fill_in "Password", :with => password
+  click_button "Login"
+end
