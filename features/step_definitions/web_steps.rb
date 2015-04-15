@@ -31,6 +31,12 @@ module WithinHelpers
 end
 World(WithinHelpers)
 
+
+
+When /^I click on link (.*)$/ do |link|
+  click_link(link)
+end
+
 # Single-line step scoper
 When /^(.*) within (.*[^:])$/ do |step, parent|
   with_scope(parent) { When step }

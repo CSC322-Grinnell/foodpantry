@@ -19,6 +19,15 @@ module NavigationHelpers
     when /^the location page$/
       '/location'
 
+    when /^the admin page$/
+      '/admin'
+
+    when /^the admin Photo page$/
+      '/admin/photos'
+
+    when /^the admin food_items page$/
+      '/admin/food_items'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

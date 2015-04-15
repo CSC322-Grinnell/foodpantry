@@ -86,3 +86,4 @@ Given /^I am a new, authenticated user$/ do
   fill_in "Password", :with => password
   click_button "Login"
 end
+
