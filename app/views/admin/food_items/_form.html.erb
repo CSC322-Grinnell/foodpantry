@@ -1,0 +1,29 @@
+<%= form_for(@food_item) do |f| %>
+  <% if @food_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@food_item.errors.count, "error") %> prohibited this food_item from being saved:</h2>
+
+      <ul>
+      <% @food_item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Name" %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label "Need Priority" %><br />
+    <%= f.select :needpriority, [['High', 2], ['Medium', 1], ['Low', 0]] %>
+  </div>
+  <div class="field">
+    <%= f.label "Item Type" %><br />
+    <%= f.select :item_type, [['Food', 'Food'], ['Non-Food', 'Non-Food']] %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
