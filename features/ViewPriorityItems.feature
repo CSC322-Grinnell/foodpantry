@@ -31,5 +31,5 @@ Scenario: check to see if the items are sorted
 
 Scenario: check to see if non-consumable column exists
 	Given I am on the food_items page
-	Then I should see "Accepted Non-Food Items"
+	Then I should see "Suggested Non-Food Items"
 

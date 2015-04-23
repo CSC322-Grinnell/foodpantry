@@ -25,6 +25,9 @@ module NavigationHelpers
     when /^the admin Photo page$/
       '/admin/photos'
 
+    when /the admin new food_items page$/
+      '/admin/food_items/new'
+
     when /^the admin food_items page$/
       '/admin/food_items'
 

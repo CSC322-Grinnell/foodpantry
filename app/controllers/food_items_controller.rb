@@ -25,14 +25,14 @@ class FoodItemsController < ApplicationController
 
   # GET /food_items/new
   # GET /food_items/new.json
-  def new
-    @food_item = FoodItem.new
+  # def new
+  #   @food_item = FoodItem.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @food_item }
-    end
-  end
+  #   respond_to do |format|
+  #     format.html # new.html.erb
+  #     format.json { render json: @food_item }
+  #   end
+  # end
 
   # GET /food_items/1/edit
   def edit
