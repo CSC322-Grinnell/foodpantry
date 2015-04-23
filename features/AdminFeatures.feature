@@ -11,3 +11,8 @@ Scenario: Deprioritize all food items
 	#When I follow admin/food_items
 	#When I click the deprioritize button
 	#Then I should see priority 0 for all items
+
+Scenario: Back Button
+	Given I am a new, authenticated user
+	And I am on the admin food_items page
+	Then I should see "Back to Homepage"
