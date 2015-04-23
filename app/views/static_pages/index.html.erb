@@ -3,7 +3,7 @@
 
 </div>
 <div class="col-md-8">
-<center>Last Updated <%= time_ago_in_words(@last_updated_at) %> ago
+<center>Last Updated <%= @last_updated_at.nil? ? "never" : time_ago_in_words(@last_updated_at) %> ago
 </br></br>
 </center>
 

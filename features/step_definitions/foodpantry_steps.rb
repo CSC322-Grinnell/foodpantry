@@ -87,3 +87,4 @@ Given /^I am a new, authenticated user$/ do
   click_button "Login"
 end
 
+

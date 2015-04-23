@@ -12,12 +12,12 @@ class StaticPagesController < ApplicationController
 
   # GET /food_items/1
   # GET /food_items/1.json
-  def show
-    @food_item = FoodItem.find(params[:id])
+  #def show
+  #  @food_item = FoodItem.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @food_item }
-    end
-  end
+   # respond_to do |format|
+    #  format.html # show.html.erb
+    #  format.json { render json: @food_item }
+    #end
+  #end
 end
