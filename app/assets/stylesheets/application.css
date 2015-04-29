@@ -60,7 +60,7 @@ body > .container {
 	text-align: center;
 }
 
-body.a:hover {
+body a:hover {
   background-color: none;
 }
 
