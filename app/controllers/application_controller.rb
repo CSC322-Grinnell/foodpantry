@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
 
   before_filter :get_footer_info
   def get_footer_info
-  	@footer_info = ContactInfo.all
+  	@footer_info = ContactInfo.first
   end
 end
