@@ -70,10 +70,11 @@
       <div class="col-md-6">
           <h2 style="color:white;">CONTACT US!</h2>
           <p>Poweshiek Food Pantry<br/>
-                 
-              <%= @footer_info.street_location %><br/>
-              <%= @footer_info.state_location %><br/>
-              <%= @footer_info.phone_number %><br/>
+              <% if(@footer_info != nil) %>
+                <%= @footer_info.street_location %><br/>
+                <%= @footer_info.state_location %><br/>
+                <%= @footer_info.phone_number %><br/>
+              <% end %>
                 
           <a style= "color: #333" href="mailto:info@micaonline.org?Subject=Hi Mica!">Email Us!</a>
           </p> 
