@@ -25,6 +25,13 @@ Scenario: Edit
 	And I press "Update Food item"
 	Then I should see "Food2"
 
+Scenario: Reset
+	Given I am on the admin food_items page
+	And I should see "2"
+	And I follow "Reset Item Priority"
+	Then I should see "0"
+
+
 @javascript
 Scenario: Destroy 
 	Given I am on the admin food_items page
