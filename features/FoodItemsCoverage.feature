@@ -35,7 +35,7 @@ Scenario: Reset
 @javascript
 Scenario: Destroy 
 	Given I am on the admin food_items page
-	And I do the delete thing
 	And I follow "Delete"
+	And I do the delete thing
 	Then I should be on the admin food_items page
 	And I should not see "Food1"

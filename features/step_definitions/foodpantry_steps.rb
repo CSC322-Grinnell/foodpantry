@@ -98,7 +98,7 @@ end
 
 And /^I do the delete thing/ do
   Capybara.current_driver = :selenium
-  page.evaluate_script('window.confirm = function() { return true;}')
+  page.driver.browser.switch_to.alert.accept
   Capybara.use_default_driver
 end
 

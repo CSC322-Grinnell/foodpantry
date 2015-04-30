@@ -31,6 +31,9 @@ module NavigationHelpers
     when /^the admin food_items page$/
       '/admin/food_items'
 
+    when /^the admin new contact_infos page$/
+      '/admin/contact_infos/new'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
