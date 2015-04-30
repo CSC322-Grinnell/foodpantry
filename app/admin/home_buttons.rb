@@ -1,3 +1,3 @@
 ActiveAdmin.register_page "HomeButton" do
-  menu label: 'HomeButton', :url => '/'
+  menu label: 'Homepage', :url => '/'
 end
