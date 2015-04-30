@@ -26,13 +26,13 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 200px;
+ /* margin-bottom: 200px; */
   font-family: 'Roboto', sans-serif !important;
 
 }
 .footer {
-  position: relative;
-  top: 83%;
+  position: absolute;
+ /* top: 83%; */
   width: 100%; 
   background-color: #8DAF2D;
 }
@@ -61,7 +61,8 @@ body > .container {
 }
 
 body a:hover {
-  background-color: none;
+  background-color: transparent !important;
+
 }
 
 body > .navbar {
