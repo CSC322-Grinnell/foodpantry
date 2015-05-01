@@ -99,7 +99,6 @@ end
 And /^I do the delete thing/ do
   Capybara.current_driver = :selenium
   page.driver.browser.switch_to.alert.accept
-  Capybara.use_default_driver
 end
 
 
