@@ -34,6 +34,12 @@ module NavigationHelpers
     when /^the admin new contact_infos page$/
       '/admin/contact_infos/new'
 
+    when /^the admin abouts page$/
+      '/admin/abouts'
+
+    when /^the admin new abouts page$/
+      '/admin/abouts/new'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
