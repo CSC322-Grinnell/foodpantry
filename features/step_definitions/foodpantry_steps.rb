@@ -87,4 +87,18 @@ Given /^I am a new, authenticated user$/ do
   click_button "Log in"
 end
 
+And /^I accept the confirmation on the popup/ do
+    Capybara.current_driver = :webkit
+      sleep 1
+      page.driver.browser.accept_js_confirms
+      sleep 5
+    Capybara.use_default_driver
+ 
+end
+
+And /^I do the delete thing/ do
+  Capybara.current_driver = :selenium
+  page.driver.browser.switch_to.alert.accept
+end
+
 
