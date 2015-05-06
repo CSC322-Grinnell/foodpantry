@@ -25,10 +25,10 @@ Scenario: Edit
 	And I press "Update About"
 	Then I should see "about_statement2"
 
-@javascript
-Scenario: Destroy 
-	Given I am on the admin abouts page
-	And I follow "Delete"
-	And I do the delete thing
-	Then I should be on the admin abouts page
-	And I should not see "about_statement2"
+#@javascript
+#Scenario: Destroy 
+#	Given I am on the admin abouts page
+#	And I follow "Delete"
+#	And I do the delete thing
+#	Then I should be on the admin abouts page
+#	And I should not see "about_statement2"
