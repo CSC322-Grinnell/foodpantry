@@ -1,3 +1,4 @@
+# top-level class comment
 class LocationController < ApplicationController
 	def index
 		@streetAddress = ContactInfo.first
