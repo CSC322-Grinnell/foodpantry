@@ -32,9 +32,11 @@ body {
 }
 .footer {
   position: absolute;
- /* top: 83%; */
+  /* having 'bottom: 0;' or 'top: 83%;' will cover up text when 
+  the screen size shrinks vertically */
   width: 100%; 
   background-color: #8DAF2D;
+  z-index: 999999;
 }
 
 
@@ -62,7 +64,7 @@ body > .container {
 
 body a:hover {
   background-color: transparent !important;
-
+  text-decoration: none !important;
 }
 
 body > .navbar {
