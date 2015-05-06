@@ -10,20 +10,7 @@ class AboutsController < ApplicationController
     end
   end
 
-  
-  def create
-    @about = About.new(params[:about])
 
-    respond_to do |format|
-      if @about.save
-        format.html { redirect_to @about, notice: 'About was successfully created.' }
-        format.json { render json: @about, status: :created, location: @about }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @about.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 
   # # PUT /abouts/1
   # # PUT /abouts/1.json
@@ -43,13 +30,5 @@ class AboutsController < ApplicationController
 
   # DELETE /abouts/1
   # DELETE /abouts/1.json
-  def destroy
-    @about = About.find(params[:id])
-    @about.destroy
-
-    respond_to do |format|
-      format.html { redirect_to abouts_url }
-      format.json { head :no_content }
-    end
-  end
+  
 end
