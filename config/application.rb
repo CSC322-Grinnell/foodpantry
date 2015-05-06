@@ -71,7 +71,6 @@ module Foodpantry
     config.assets.version = '1.0'
 
     config.assets.initialize_on_precompile=false
-    # Precompile additional assets. Defaults to [application.js, application.css, non-JS/CSS]
-    config.assets.precompile += ['*.css','*.js'] 
+
   end
 end
