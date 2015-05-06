@@ -12,7 +12,7 @@ Scenario: Deprioritize all food items
 	#When I click the deprioritize button
 	#Then I should see priority 0 for all items
 
-Scenario: Back Button
+Scenario: Back Button on Global Navigation
 	Given I am a new, authenticated user
 	And I am on the admin food_items page
-	Then I should see "Back to Homepage"
+	Then I should see "Homepage"
