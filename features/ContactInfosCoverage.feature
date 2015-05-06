@@ -23,10 +23,10 @@ Scenario: Edit
 	Then I should see "Hour2"
 
 
-#@javascript
-#Scenario: Destroy 
-#	Given I am on the admin contact_infos page
-#	And I follow "Delete"
-#	And I do the delete thing
-#	Then I should be on the admin contact_infos page
-#	And I should not see "Food1"
+@javascript
+Scenario: Destroy 
+	Given I am on the admin contact_infos page
+	And I follow "Delete"
+	And I do the delete thing
+	Then I should be on the admin contact_infos page
+	And I should not see "Hour2"
